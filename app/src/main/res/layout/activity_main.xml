@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_padding"
+    android:background="@color/colorRadioGroup">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/text_padding"
+        android:background="@drawable/text_300" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioGroup
+            android:id="@+id/rGrpEngl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rBtnEngl1"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnEngl2"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnEngl3"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnEngl4"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnEngl5"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:theme="@style/themeRadioButton" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rGrpRus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/rBtnRus1"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnRus2"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnRus3"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnRus4"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:theme="@style/themeRadioButton" />
+
+            <RadioButton
+                android:id="@+id/rBtnRus5"
+                style="@style/styleRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="false"
+                android:theme="@style/themeRadioButton" />
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/ButtonEnter"
+            style="@style/styleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_baseline_done_outline_24"
+            android:enabled="false"
+            android:onClick="onClickEnter" />
+        <TextView
+            android:id="@+id/answerCorrect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#006600"
+            style="@style/styleText"
+            android:text="@string/answer_correct" />
+
+        <TextView
+            android:id="@+id/answerWrong"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#CC3366"
+            style="@style/styleText"
+            android:text="@string/answer_wrong" />
+
+        <Button
+            android:id="@+id/buttonReplace"
+            android:onClick="onClicReplace"
+            style="@style/styleButton"
+            android:drawableStart="@drawable/ic_replaced_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buttonReplace" />
+    </LinearLayout>
+
+</LinearLayout>

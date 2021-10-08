@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+
+    <style name="styleRadioButton" >
+        <item name="android:background">@drawable/radiobutton_on_off</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:padding">@dimen/radiogroup_padding</item>
+        <item name="android:layout_margin">@dimen/radiogroup_margin</item>
+    </style>
+
+    <style name="themeRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/holo_normal</item>
+        <item name="colorControlActivated">@color/holo_activated</item>
+    </style>
+
+    <style name="styleButton">
+        <item name="android:background">@drawable/border_radiobutton_on</item>
+        <item name="android:textColor">@color/color_text_button</item>
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_margin">@dimen/radiogroup_margin</item>
+        <item name="android:padding">@dimen/button_padding</item>
+    </style>
+
+    <style name="styleText">
+        <item name="android:textStyle">bold|italic</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:layout_margin">@dimen/radiogroup_margin</item>
+        <item name="android:padding">@dimen/text_padding</item>
+    </style>
+
+</resources>
